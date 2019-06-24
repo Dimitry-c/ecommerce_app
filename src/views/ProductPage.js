@@ -15,10 +15,10 @@ function ProductPage() {
 
         return (<React.Fragment>
             <span className='large-price'>{intPrice}</span>
-            <span class='small-price'>{decimalPrice}</span>
+            <span className='small-price'>{decimalPrice}</span>
             </React.Fragment>)
-
     }
+
 
     
     return (
