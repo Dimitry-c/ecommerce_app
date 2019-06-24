@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+.favorites-btn{
+    position: absolute;
+    left:20px;
+    bottom:10px;
+    a{
+
+        .favorites-img{
+            width:20px;
+            height:20px;
+        }
+    }
+}

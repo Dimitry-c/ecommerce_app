@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+.purchase-btn{
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+    a{
+        text-align: center;
+        padding:10px 20px;
+        width: 300px;
+        background:$purchase-btn-color;
+        color:$content-btn-color;
+        border-radius: 6px;
+        box-shadow: $box-shaddow-btn;
+        text-decoration: none;
+        .cart-icon{
+            height:20px;
+            top: -2px;
+            position: relative;
+        }
+        .txt{
+            margin-left:10px;
+        }
+    }
+}

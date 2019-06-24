@@ -1,36 +1,52 @@
 @import "./variables.scss";
 
 .product-page {
-  width: 90%;
-  border: 1px solid black;
-  margin: 50px auto;
+
 
   // Default classes
   .line {
+    margin:0 auto;
     background: $line-color;
-    width: 100%;
+    width: 90%;
     height: 2px;
   }
 
   .product-image-slider {
-    //   border:1px solid black;
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
-    img {
-      border: 1px solid black;
+    width:100vw;
+    position: relative;
+    .slider-img {
       height: 300px;
+    }
+    .price {
+      position: absolute;
+      right:20px;
+      bottom:10px;
+      &::before{
+        content:"\0024";
+        font-size:$font-size-xs;
+      }
+      &::before ,.small-price{
+        vertical-align: top;
+        font-size:$font-size-xs;
+      }
+      .large-price{
+        font-size:$font-size-m;
+      }
     }
   }
 
   .product-main-details {
+    width:90%;
+    margin:0 auto;
+
     .title {
       font-size: $font-size-l;
       text-align: center;
       padding: 10px 0;
     }
-    .price {
-    }
+
   }
   .product-tabs {
     padding: 10px;
